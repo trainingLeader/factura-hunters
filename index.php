@@ -9,6 +9,14 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <header>
+        <div class="container">
+            <?php include_once('Templates/header.php'); ?>
+        </div>
+    </header>
+    <nav></nav>
+    <div class="container">
+        <h1>Pagina en php</h1>
+    </div>
 </body>
 </html>
