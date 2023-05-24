@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/bootstrap/bootstrap.min.js" defer></script>
-    <script src="Controllers/facturainvoice.js" defer></script>
+    <script src="Controllers/facturacion.js" defer></script>
     <title>Document</title>
 </head>
 
@@ -27,13 +27,13 @@
                             <div class="col-4">
                                 <div class="mb-3">
                                     <label for="nro_factura" class="form-label">Nro de factura</label>
-                                    <input type="text" class="form-control" id="nro_factura" name="nro_factura">
+                                    <input type="text" class="form-control" id="nro_factura" name="nro_factura[]">
                                 </div>
                             </div>
                             <div class="col-3">
                                 <div class="mb-3">
                                     <label for="fecha_factura" class="form-label">Fecha de factura</label>
-                                    <input type="date" class="form-control" id="fecha_factura" name="fecha_factura">
+                                    <input type="date" class="form-control" id="fecha_factura" name="fecha_factura[]">
                                 </div>
                             </div>
                             <div class="col-5">
@@ -80,6 +80,7 @@
                     </div>
                 </div>
             </div>
+        </form>
             <div class="row">
                 <div class="col-12">
                     <div class="container titulo-detail">
@@ -92,17 +93,15 @@
                     <button type="button" class="btn  w-100 btn-danger" id="addItem">Add Invoice(+)</button>
                 </div>
             </div>
-        </form>
-        <form id="frmDetail">
             <div class="container body-detail p-3">
-    
+
             </div>
-        </form>
-        <div class="row mt-3">
-            <div class="col-6">
-                <button type="submit" class="btn  w-100 btn-success" id="buy" form="frmDetail">Finalizar compra</button>
+            <div class="row mt-3">
+                <div class="col-6">
+                    <button type="submit" class="btn  w-100 btn-success" id="buy">Finalizar compra</button>
+                </div>
             </div>
-        </div>
+        
     </div>
 </body>
 

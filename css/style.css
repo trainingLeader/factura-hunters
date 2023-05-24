@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.encabezado-factura{
+    background-color: lightgrey;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 0.15rem dashed;
+}
+.encabezado-factura h2{
+    text-align: center;
+    padding: 20px;
+}
+.titulo-detail{
+    background-color: black;
+    padding: 10px;
+    color: aliceblue;
+    text-align: center;
+    border-radius: 20px;
+}
+.body-detail{
+    background-color: rgb(211, 211, 211);
+    margin-top: 10px;
+    border-radius: 15px;
+    border: 0.15rem dashed;
+}
