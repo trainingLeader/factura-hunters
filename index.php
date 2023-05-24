@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/bootstrap/bootstrap.min.js" defer></script>
-    <script src="Controllers/facturainvoice.js" defer></script>
+    <script src="Controllers/facturacion.js" defer></script>
     <title>Document</title>
 </head>
 
@@ -39,7 +39,7 @@
                             <div class="col-5">
                                 <div class="mb-3">
                                     <label for="vendedor" class="form-label">Vendedor</label>
-                                    <input type="text" class="form-control" id="vendedor" name="vendedor[]">
+                                    <input type="text" class="form-control" id="vendedor" name="vendedor">
                                 </div>
                             </div>
                         </div>
@@ -47,19 +47,19 @@
                             <div class="col-3">
                                 <div class="mb-3">
                                     <label for="nro_factura" class="form-label">Nro Identificacion cliente</label>
-                                    <input type="text" class="form-control" id="nro_factura" name="nro_factura[]">
+                                    <input type="text" class="form-control" id="nro_factura" name="nro_factura">
                                 </div>
                             </div>
                             <div class="col-4">
                                 <div class="mb-3">
                                     <label for="nombre_cliente" class="form-label">Nombres y apellidos</label>
-                                    <input type="text" class="form-control" id="nombre_cliente" name="nombre_cliente[]">
+                                    <input type="text" class="form-control" id="nombre_cliente" name="nombre_cliente">
                                 </div>
                             </div>
                             <div class="col-5">
                                 <div class="mb-3">
                                     <label for="email" class="form-label">Correo Electronico</label>
-                                    <input type="text" class="form-control" id="email" name="email[]">
+                                    <input type="text" class="form-control" id="email" name="email">
                                 </div>
                             </div>
                         </div>
@@ -67,19 +67,20 @@
                             <div class="col-6">
                                 <div class="mb-3">
                                     <label for="direccion" class="form-label">Dirección</label>
-                                    <input type="text" class="form-control" id="direccion" name="direccion[]">
+                                    <input type="text" class="form-control" id="direccion" name="direccion">
                                 </div>
                             </div>
                             <div class="col-3">
                                 <div class="mb-3">
                                     <label for="tel_contacto" class="form-label">Telefono de contacto</label>
-                                    <input type="text" class="form-control" id="tel_contacto" name="tel_contacto[]">
+                                    <input type="text" class="form-control" id="tel_contacto" name="tel_contacto">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </form>
             <div class="row">
                 <div class="col-12">
                     <div class="container titulo-detail">
@@ -92,17 +93,15 @@
                     <button type="button" class="btn  w-100 btn-danger" id="addItem">Add Invoice(+)</button>
                 </div>
             </div>
-        </form>
-        <form id="frmDetail">
             <div class="container body-detail p-3">
-    
+
             </div>
-        </form>
-        <div class="row mt-3">
-            <div class="col-6">
-                <button type="submit" class="btn  w-100 btn-success" id="buy" form="frmDetail">Finalizar compra</button>
+            <div class="row mt-3">
+                <div class="col-6">
+                    <button type="submit" class="btn  w-100 btn-success" id="buy">Finalizar compra</button>
+                </div>
             </div>
-        </div>
+        
     </div>
 </body>
 
