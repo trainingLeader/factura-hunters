@@ -98,7 +98,7 @@
             </div>
             <div class="row mt-3">
                 <div class="col-6">
-                    <button type="submit" class="btn  w-100 btn-success" id="buy">Finalizar compra</button>
+                    <button type="button" class="btn  w-100 btn-success" id="buy">Finalizar compra</button>
                 </div>
             </div>
         

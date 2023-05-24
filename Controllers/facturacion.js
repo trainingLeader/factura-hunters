@@ -24,6 +24,15 @@ eliminarItemLista = (idIdx) =>{
         }
     })
 }
+btnBuy.addEventListener("click",(e) =>{
+    e.preventDefault();
+    let productos = document.querySelectorAll(".frmDataDetail");
+    productos.forEach((item) => {
+        let data = Object.fromEntries(new FormData(item));
+        items.push(data);
+    })
+    console.log(items);
+})
 crearItemHTML = () => {
     let id = Date.now().toString(16);
     let facturaHTML = /* html */ `
@@ -44,7 +53,7 @@ crearItemHTML = () => {
                     <div class="col">
                         <div class="mb-3">
                             <label for="cantidad" class="form-label">Cantidad</label>
-                            <input type="number" id="txt${id}" readonly="readonly"  class="form-control" value ="0" name="cantidad">
+                            <input type="text" pattern="[0-9]+" id="txt${id}" readonly="readonly"  class="form-control" value ="0" name="cantidad">
                         </div>
                     </div>
                     <div class="col">
