@@ -26,7 +26,6 @@ eliminarItemLista = (idIdx) =>{
 }
 crearItemHTML = () => {
     let id = Date.now().toString(16);
-    let idxForm = formArray.length;
     let facturaHTML = /* html */ `
             <form id="${id}" class="frmDataDetail">
                 <div class="row g-1  row-cols-xl-6 row-cols-sm-4">
