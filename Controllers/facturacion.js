@@ -20,16 +20,18 @@ eliminarItemLista = (idIdx) =>{
     let productos = document.querySelectorAll(".frmDataDetail");
     productos.forEach((item) => {
         if(item.id == idIdx){
-                item.remove();
+            let indice = Array.from(divDetails.children).map((val,id)=>{return (val.id == item.id) ? id :undefined;}).join("");
+            items.splice(indice,1);
+            item.remove();
         }
     })
 }
 btnBuy.addEventListener("click",(e) =>{
     e.preventDefault();
     let productos = document.querySelectorAll(".frmDataDetail");
-    productos.forEach((item) => {
+    productos.forEach((item,id) => {
         let data = Object.fromEntries(new FormData(item));
-        items.push(data);
+        items[id] = data;
     })
     console.log(items);
 })
