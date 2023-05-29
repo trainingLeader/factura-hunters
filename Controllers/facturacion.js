@@ -20,7 +20,7 @@ eliminarItemLista = (idIdx) =>{
     let productos = document.querySelectorAll(".frmDataDetail");
     productos.forEach((item) => {
         if(item.id == idIdx){
-            let indice = Array.from(divDetails.children).map((val,id)=>{return (val.id == item.id) ? id :undefined;}).join("");
+            let indice = Array.from(divDetails.children).map((val,idx)=>{return (val.id == item.id) ? idx :undefined;}).join("");
             items.splice(indice,1);
             item.remove();
         }
